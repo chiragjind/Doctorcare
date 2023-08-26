@@ -1,0 +1,732 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Lumanosimo&family=Open+Sans&family=Raleway:wght@100;200&family=Roboto+Condensed&family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&family=Mulish:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+:root{
+    --txtcolor:#5e5f63;
+    --txtcolor2:#343537;
+    --txtcolor3:#362727;
+}
+
+/* navbar */
+
+.loginbody .navbarcontainer{
+   padding: 1rem 2rem;
+    background-color: rgba(255,255,255,0.6);
+    color: black;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
+}
+
+.loginbody .navbar-brand{
+    font-size: 3rem;
+    font-weight: 800;
+    color: black;
+}
+.loginbody .fa-snowflake{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    color: #0b0b0b;
+    margin: 0 0.8rem;
+    font-size: 2rem;
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.loginbody .linknavbar{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: grey;
+    word-spacing: 10px;
+    margin-right: 50px;
+}
+
+.loginbody .navbar-toggler{
+      background-color: #0b0b0b;
+}
+
+
+.loginbody .nav-link{
+    transition: all 0.1s ease-in;
+    color: black;
+    font-size: 1.8rem;
+    margin-right: 10px;
+}
+.loginbody .nav-link:hover{
+    border-radius: 5px;
+    background-color: #e9e9ed;
+}
+
+.loginbody .nav-link:hover{
+  color: black;
+ 
+ transform: scale3d(1.8);
+}
+.loginbody .link{
+    padding-left: 20px;
+}
+
+
+/* login page */
+
+
+.loginbody{
+    background-image: url(images/loginpage.jpg);
+    /* font-family: 'Ubuntu', sans-serif; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.logincontainer{
+    width: 100%;
+    height: 80vh;
+}
+
+.loginrow{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_divlogin{
+    width: 30%;
+    height: 350px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.6);
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
+}
+
+.loginform{
+    width: 60%;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(46, 45, 45);
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+.formfield .mb-3 input{
+    background-color: transparent;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(1, 1, 1);
+    text-align: center;
+    font-size: 1.5rem;
+    overflow-x: scroll;
+    color: rgb(12, 13, 13);
+    font-weight: bolder;
+}
+ .loginbtn{
+    width: 100%;
+    padding: 0rem 1rem;
+    font-size: 2rem;
+ }
+
+ /* home page */
+
+
+ .homepage{
+   background-color: white;
+ }
+
+ .homepage .navbarcontainer{
+    padding: 1rem 2rem;
+    background-color: white;
+    color: black;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
+ }
+
+ .homepage .navbar-brand{
+    font-size: 3rem;
+    font-weight: 800;
+    color: black;
+}
+
+.homepage .fa-snowflake{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    color: #0b0b0b;
+    margin: 0 0.8rem;
+    font-size: 2rem;
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.homepage .navbar-toggler{
+    background-color: #0b0b0b;
+}
+
+.homepage .nav-link{
+    transition: all 0.1s ease-in;
+    color: black;
+    font-size: 1.8rem;
+    margin-right: 10px;
+}
+
+.homepage .nav-item:hover{
+    border-radius: 5px;
+    background-color: #e9e9ed;
+}
+.homepage .nav-link:hover{
+  color: black;
+ 
+ transform: scale3d(1.8);
+}
+.homepage .link{
+    padding-left: 20px;
+}
+
+/* sidebar */
+
+/* form */
+
+
+
+.sidebar{
+    margin-top: 5px;
+    min-height: 89vh;
+    height: 100%;
+    width: fit-content;
+    box-shadow:  1px 2px 4px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    padding: 0rem 1rem;
+    background-color: #a29f9f;
+}
+
+
+.sidebarlink{
+    position: relative;
+    top: 3%;
+    left: 3%;
+    width: 90%;
+    color: #0b0b0b;
+    font: 1.5rem;
+}
+
+.sidebarmenu{
+    width: 90%;
+    color: #0b0b0b;
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.sidebarmenu a{
+    color: #0b0b0b;
+    text-decoration: none;
+    font-weight: 600;
+    width: 100%;
+    padding-right: 2rem;
+}
+.sidebarmenu a:hover{
+    width: 50px;
+    border-radius: 5px;
+    background-color: #e9e9ed;
+}
+
+
+.homecontainerright{
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
+    background-image: url(images/hospiimg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* homepage content div4 leftside */
+
+
+.homeinfo{
+    padding: 0 1rem;
+    /* max-height: 89vh; */
+}
+.texthome{
+    width:auto;
+    height: auto;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    background-color: rgba(98, 92, 92,0.9);
+    padding: 2rem 2rem;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
+    color: white;
+    transition: all 1s ease;
+    display: block;
+}
+.texthome:hover{
+    transform: translateX(10px);
+}
+
+/* Basic styling for <p> tags */
+.texthome p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    /* Adjust font size and margins for smaller screens */
+   .texthome p {
+      font-size: 14px;
+      margin: 8px 0;
+    }
+  }
+  
+  /* Additional breakpoints for larger screens if needed */
+  @media (min-width: 1200px) {
+   .texthome p {
+      font-size: 18px;
+      margin: 12px 0;
+    }
+  }
+  
+
+
+
+
+
+/* book section */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.booksection{
+    position: relative;
+    top: 20px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+.book{
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: transform 2s;
+}
+
+.paper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+
+
+.front,.back{
+      background-color: #ccc6c6;
+      color: black; 
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transform-origin: left;
+      transition: transform 2s;
+      border-radius: 20px;
+      border: 2px solid rgb(0, 0, 0);
+}
+
+.front{
+    z-index: 1;
+    backface-visibility: hidden;
+}
+
+.back-content{
+    transform: rotateY(180deg);
+}
+.back{
+    z-index: 0;
+
+}
+
+.front-content,.back-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#prevbtn,#nextbtn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 2s;
+    z-index: 10;
+}
+#prevbtn:hover,#nextbtn:hover{
+    color: #7a7272;
+ 
+}
+
+i{
+    font-size: 50px;
+    /* color: grey; */
+}
+
+#pg1{
+    z-index: 3;
+}
+
+#pg2{
+    z-index: 2;
+}
+
+#pg3{
+    z-index: 1;
+}
+
+.flipped .front,
+.flipped .back{
+  transform: rotateY(-180deg);
+}
+
+
+.bookheading{
+    text-transform: uppercase;
+    position: absolute;
+    top: 20px;
+    text-align: center;
+   
+}
+
+.bookheading h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: 'Mulish', sans-serif;
+}
+
+.bookheading p{
+   font-size: 1.5rem;
+}
+
+
+/* style1.css */
+
+
+/* form css */
+ 
+/* .formpage{
+    background-image: url(images/formimage.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+/* .formpage .navbarcontainer{
+  background-color:transparent!important;  
+} */
+
+
+
+.userformcontaiiner{
+    /* background-image: url(images/formimage.avif); */
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.formrowuser{
+    width: auto;
+    height: auto;
+}
+
+.formcoluser{
+    height: auto;
+    margin-top: 20px;
+}
+.mainrowformuser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    /* border: 1px solid black; */
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.8);
+}
+
+.headingcoluser{
+    width: 60%;
+    height: auto;
+    padding: 1rem 1rem;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.headingcoluser .heading{
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+.headingcoluser .heading h1{
+    display: inline;
+    width: fit-content;
+    font-weight: 900;
+    font-size: 2.5rem;
+    font-family:  serif;
+}
+
+.headingcoluser .heading p{
+    font-weight: 900;
+    font-size: 1.8rem;
+    font-family:  serif;
+}
+
+.heading hr{
+   font-size: 2rem;
+    font-weight: bolder;
+}
+
+.patientinfo{
+    margin-top: 2%;
+    width: 100%;
+  /* border: 1px solid black; */
+    box-shadow: 0px -1px 5px rgba(0,0,0,0.9);
+
+}
+
+.registerdate{
+    padding: 1rem 1rem;
+    width: 100%;
+    display: flex;
+}
+
+.registerdate .inputfielddate{
+    margin-left:5%;
+    font-size: 1.5;
+}
+.registerdate .inputfielddate input{
+    padding: 5px 5px;
+    margin-right: 2px;
+    font-size: 1rem;
+}
+
+.patientname{
+    padding: 1rem 1rem;
+    display: flex;
+    font-size: 2rem;
+}
+
+.patientname label{
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
+.patientname input{
+    margin: 0 2px;
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    color: black;
+}
+
+.formradio{
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+.formradio input{
+    border-radius: 10px;
+}
+.formradio label{
+    padding: 0rem 0.5rem 1rem;
+}
+
+
+.healthistory{
+    background-color: antiquewhite;
+}
+
+.formbtn{
+    padding: 1rem 1rem;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 10px;
+ font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* patient page css  */
+
+
+.patientcol{ 
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
+    background-image: url(images/patientbg.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+/* table css */
+
+
+
+/* .patientpage .navbarcontainer{
+    background-color: transparent!important;
+} */
+
+
+
+
+.bodytablecss{
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+   /* justify-content: center; */
+   /* align-items: center; */
+   /* backdrop-filter: blur(7px); */
+}
+
+.formsection .sidebar{
+    background-color: rgb(235, 129, 43);
+}
+
+.patientsection .sidebar{
+    background-color:transparent;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+}
+.patientsection{
+     box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+main .table{
+    width: 82vw;
+    height: 100%;
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+    overflow: hidden;
+    position: relative;
+    top: -28px;
+   }
+.table_header{
+    width: 100%;
+    height: 10%;
+    background-color: rgba(126, 120, 120, 0.267);
+    padding: 0.8rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: black;
+}
+
+.table_body::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.table_body::-webkit-scrollbar-thumb{
+    border-radius: 0.5rem;
+    background-color: #0004;
+    visibility: hidden;  
+}
+
+.table_body:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+
+.table_body{
+    width: 95%;
+    min-height: 70vh!important;
+    max-height: calc(89% - 1.6rem);
+    background-color: #fffb;
+    margin: 0.8rem auto;
+    border-radius: 0.6rem;
+    overflow: auto;
+}
+
+.bodytablecss table ,th,td{
+    padding: 2rem;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.bodytablecss thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #d5d1defe;
+}
+
+.bodytablecss tbody tr:nth-child(even){
+    background-color: #0000000b;
+}
+
+.bodytablecss tbody tr:hover{
+    background-color: #fff6;
+}
+
+
+
+/* BOOK */
+
+.homepage .navbarcontainer{
+    background-color: #ccc6c6;
+    color: black;
+}
