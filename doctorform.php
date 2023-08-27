@@ -12,8 +12,8 @@
                         <div class="registerdate">
                             <h1>Registration Date and Time</h1>
                             <div class="inputfielddate">
-                                <input required='true' type="date" id="start" name="rdate"  />
-                                <input required='true' type="time" id="appt" name="rtime"  />
+                                <input required='true' type="date" id="start" name="rdate"  value="<?php echo date('Y-m-d'); ?>" />
+                                <input required='true' type="time" id="appt" name="rtime"   value="<?php echo date('H:i:s'); ?>"/>
                             </div>
                         </div>
                         <div class="mb-3 patientname">

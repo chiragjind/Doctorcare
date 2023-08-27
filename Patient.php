@@ -14,7 +14,7 @@ if(!isset($_SESSION['username'])){
    ?>
 </head>
 <body>
-    <div class="homepage patientpag"> 
+    <div class="homepage patientpage"> 
     <?php
    include 'Navbar.php'
    ?>
@@ -37,7 +37,7 @@ if(!isset($_SESSION['username'])){
               <table class="table ">
       <thead>
     <tr>
-      <th scope="col">#id</th>
+      <th scope="col">#ID</th>
       <th scope="col">Date-time</th>
       <th scope="col">Name</th>
       <th scope="col">Gender</th>
@@ -49,7 +49,6 @@ if(!isset($_SESSION['username'])){
       <th scope="col">Reason</th>
       <th scope="col">Notes</th>
       <th scope="col">Medicine</th>
-      <th scope="col" colspan='2'>opertion</th>
     </tr>
   </thead>
   <tbody>
@@ -82,8 +81,6 @@ if(!isset($_SESSION['username'])){
         <td><?php echo $res['reason']?></td>
         <td><?php echo $res['additionalnote']?></td>
         <td><?php echo $res['anymedicine']?></td>
-        <td> <a href=""> <i class="fa-solid fa-pen-clip fs-1"></i></a> </td>
-        <td> <a href=""><i class="fa-solid fa-trash fs-1"></i></a> </td>
       </tr>
       <?php
     }

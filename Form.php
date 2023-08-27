@@ -47,7 +47,7 @@ if(!isset($_SESSION['username'])){
   if(isset($_POST['submit'])){
     $date = $_POST['rdate'];
     $time = $_POST['rtime'];
-    $rdatetime = $date.$time;
+    $rdatetime = $date."/".$time;
     $name = $_POST['name'];
     $gender = $_POST['gender'];
     $dbdate = $_POST['dbdate'];
